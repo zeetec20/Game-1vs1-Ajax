@@ -12,7 +12,7 @@
     var playerBlack = 0;
     </script>
     
-    <h1>PLAYER 1</h1>
+    <h1>PLAYER 2</h1>
     <h1>Silahkan Pilih Bidak</h1>
 
     <button id="buttonWhite">PUTIH</button>
