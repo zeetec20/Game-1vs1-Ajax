@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>PLAYER 2</h1>
+    <script>
+    var playerWhite = 0;
+    var playerBlack = 0;
+    </script>
+    
+    <h1>PLAYER 1</h1>
+    <h1>Silahkan Pilih Bidak</h1>
+
+    <button id="buttonWhite">PUTIH</button>
+    <button id="buttonBlack">BLACK</button>
+
+    <div class="updateWhite" id="updateWhite"></div>
+    <div class="updateBlack" id="updateBlack"></div>
+
+    <div class="checkPlayerWhite" id="checkPlayerWhite"></div>
+    <div class="checkPlayerBlack" id="checkPlayerBlack"></div>
+
+    <button id="readyP1">Ready</button>
+
+    <script src="./asset/js/function.js"></script>
+    <script src="./asset/js/script.js"></script>
 </body>
 </html>

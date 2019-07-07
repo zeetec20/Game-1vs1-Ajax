@@ -5,11 +5,11 @@ $rowPlayer = mysqli_fetch_row($result);
 
 if ($rowPlayer[0] == 0) {
     mysqli_query($conn, "UPDATE lobby SET player = 1");
-    header("Location: ./player1/index.php");
+    header("Location: ./p1/index.php");
 }
 
 if ($rowPlayer[0] == 1) {
     mysqli_query($conn, "UPDATE lobby SET player = 2");
-    header("Location: ./player2/index.php");
+    header("Location: ./p2/index.php");
 }
 ?>
