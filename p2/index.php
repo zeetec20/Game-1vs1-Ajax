@@ -10,6 +10,9 @@
     <script>
     var playerWhite = 0;
     var playerBlack = 0;
+    var timer = 0;
+    var gameStart = 0;
+    var ready = 0;
     </script>
     
     <h1>PLAYER 2</h1>
@@ -24,7 +27,12 @@
     <div class="checkPlayerWhite" id="checkPlayerWhite"></div>
     <div class="checkPlayerBlack" id="checkPlayerBlack"></div>
 
-    <button id="readyP1">Ready</button>
+    <button id="buttonReady">Ready</button>
+    <br>
+    <div id="ready">
+        <div id="updateReady"></div>
+        <div id="gameStart"></div>
+    </div>
 
     <script src="./asset/js/function.js"></script>
     <script src="./asset/js/script.js"></script>

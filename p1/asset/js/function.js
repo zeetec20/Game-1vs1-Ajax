@@ -38,5 +38,5 @@ function checkPlayerReady(params) {
             document.getElementById('buttonReady').disabled = true;
             timerStart();
         }
-    }, 10);
+    }, 1);
 }

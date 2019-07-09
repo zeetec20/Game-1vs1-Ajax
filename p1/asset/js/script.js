@@ -81,6 +81,7 @@ var checkPlayerBlack = setInterval(() => {
 }, 10);
 
 buttonReady.addEventListener('click', function () {
+    buttonReady.disabled = true;
     xhr6.onreadystatechange = function (params) {
         if (xhr6.readyState == 4 && xhr6.status == 200) {
             document.getElementById('updateReady').innerHTML = xhr6.responseText;

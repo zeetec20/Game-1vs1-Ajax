@@ -2,8 +2,11 @@ var xhr1 = new XMLHttpRequest;
 var xhr2 = new XMLHttpRequest;
 var xhr3 = new XMLHttpRequest;
 var xhr4 = new XMLHttpRequest;
+var xhr5 = new XMLHttpRequest;
+var xhr6 = new XMLHttpRequest;
 var buttonWhite = document.getElementById("buttonWhite");
 var buttonBlack = document.getElementById("buttonBlack");
+var buttonReady = document.getElementById("buttonReady");
 
 buttonWhite.addEventListener('click', function() {
     document.getElementById('buttonWhite').disabled = true;
@@ -48,6 +51,10 @@ var checkPlayerWhite = setInterval(() => {
     if (playerWhite != 0) {
         clearInterval(checkPlayerWhite);
         disabledButtonWhite();
+        ready = ready + 1;
+        if (ready == 2) {
+            checkPlayerReady();
+        }
     }
 }, 10);
 
@@ -66,6 +73,24 @@ var checkPlayerBlack = setInterval(() => {
     if (playerBlack != 0) {
         clearInterval(checkPlayerBlack);
         disabledButtonBlack();
+        ready = ready + 1;
+        if (ready == 2) {
+            checkPlayerReady();
+        }
     }
 }, 10);
+
+buttonReady.addEventListener('click', function () {
+    xhr6.onreadystatechange = function (params) {
+        if (xhr6.readyState == 4 && xhr6.status == 200) {
+            document.getElementById('updateReady').innerHTML = xhr6.responseText;
+            // eval(document.getElementById("runscript").innerHTML);
+        }
+    }
+
+    var src = "../p2/asset/php/ready.php";
+    xhr6.open('GET', src, true);
+    xhr6.send();
+    buttonReady.disabled = true;
+})
 
