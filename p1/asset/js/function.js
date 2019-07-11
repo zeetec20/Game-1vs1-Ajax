@@ -1,10 +1,3 @@
-function disabledButtonWhite(params) {
-    document.getElementById('buttonWhite').disabled = true;
-}
-
-function disabledButtonBlack(params) {
-    document.getElementById('buttonBlack').disabled = true;
-}
 
 function timerStart(params) {
     var cooldown = 10;
@@ -15,7 +8,7 @@ function timerStart(params) {
             gameStart = 2;
             clearInterval(timerStart);
             document.getElementById('timer').innerHTML = cooldown;
-            alert("yee berhasil sesudah time start");
+            window.location.href = "http://localhost/Game-CoOp-With-Ajax/game/index.php?player=player%201";
         }
     }, 1000);
 }

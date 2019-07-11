@@ -19,13 +19,6 @@ if ($playerReady1[0] == 1 && $playerReady2[0] == 1) {
     </script>
     ';
 } else {
-    if ($playerReady1[0] == 1) {
-        echo '
-        <script type="text/javascript" id="runscript">
-            document.getElementById("warningReady").innerHTML = "Player 1 sudah ready, dimohon segera ready";
-        </script>
-        ';
-    }
     if ($playerReady2[0] == 1) {
         echo '
         <script type="text/javascript" id="runscript">
@@ -34,6 +27,12 @@ if ($playerReady1[0] == 1 && $playerReady2[0] == 1) {
         </script>
         ';
     }
+    if ($playerReady1[0] == 1) {
+        echo '
+        <script type="text/javascript" id="runscript">
+            document.getElementById("warningReady").innerHTML = "Player 1 sudah ready, dimohon segera ready";
+        </script>
+        ';
+    }
 }
-
 ?>

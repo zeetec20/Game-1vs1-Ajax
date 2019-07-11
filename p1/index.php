@@ -16,22 +16,16 @@
     </script>
     
     <h1>PLAYER 1</h1>
-    <h1>Silahkan Pilih Bidak</h1>
-
-    <button id="buttonWhite">PUTIH</button>
-    <button id="buttonBlack">BLACK</button>
-
-    <div class="updateWhite" id="updateWhite"></div>
-    <div class="updateBlack" id="updateBlack"></div>
-
-    <div class="checkPlayerWhite" id="checkPlayerWhite"></div>
-    <div class="checkPlayerBlack" id="checkPlayerBlack"></div>
+    <h1>Silahkan Tekan Ready</h1>
 
     <button id="buttonReady">Ready</button>
     <br>
     <div id="ready">
         <div id="updateReady"></div>
         <div id="gameStart"></div>
+    </div>
+    
+    <div id="start">
     </div>
 
     <script src="./asset/js/function.js"></script>
