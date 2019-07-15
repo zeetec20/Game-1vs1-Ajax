@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.player{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.warning{
+    margin: auto;
+    width: 15%;
+}
+
+.warning h2, .warning h1{
+    text-align: center;
+}
+
+.enemy{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* PLAYER SELECTION */
+/* PLAYER SELECTION */
+.playerSelection{
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    left: 20%;
+    top: 15%;
+}
+
+.playerSelection h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.playerSelection div{
+    position: absolute;
+    width: 100%;
+    height: 180px;
+}
+
+.playerSelection .flipImg img{
+    position: absolute;
+    width: 100%;
+}
+
+.playerSelection .flipImg{
+    transition: 2s;
+}
+
+.flipImg img:nth-child(1){
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.flipImg img:nth-child(2){
+    z-index: 1;
+}
+
+.playerSelection .flipImg:hover{
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+
+
+.playerSelect{
+    position: absolute;
+    width: 50%;
+    margin-top: 18%;
+}
+
+.playerSelect ul li{
+    display: inline;
+}
+
+.playerSelect .bgk{
+    position: absolute;
+}
+
+.playerSelect .batu{
+    left: 20%;
+}
+
+.playerSelect .gunting{
+    left: 47.5%;
+}
+
+.playerSelect .kertas{
+    left: 74%;
+}
+
+.playerSelect .batu img:hover{
+    border-radius: 20px;
+    border: solid 3px black; 
+}
+
+.playerSelect .gunting img:hover{
+    border-radius: 20px;
+    border: solid 3px black; 
+}
+
+.playerSelect .kertas img:hover{
+    border-radius: 20px;
+    border: solid 3px black; 
+}
+
+.playerSelect img{
+    transition: 0.5s;
+    width: 80px;
+    cursor: pointer;
+}
+
+.enemySelection{
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    right: 20%;
+    top: 15%;
+}
+
+.enemySelection h1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.enemySelection div{
+    position: absolute;
+    width: 100%;
+    height: 180px;
+}
+
+.enemySelection .flipImg img{
+    position: absolute;
+    width: 100%;
+}
+
+.enemySelection .flipImg{
+    transition: 2s;
+}
+
+.flipImg img:nth-child(1){
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.flipImg img:nth-child(2){
+    z-index: 1;
+}
+
+.enemySelection .flipImg:hover{
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+
+.enemySelect{
+    position: absolute;
+    width: 50%;
+    margin-top: 18%;
+    right: 0;
+}
+
+.enemySelect ul li{
+    display: inline;
+}
+
+.enemySelect .bgk{
+    position: absolute;
+}
+
+.enemySelect .batu{
+    top: 0;
+    left: 20%;
+}
+
+.enemySelect .gunting{
+    top: 0;
+    left: 47.5%;
+}
+
+.enemySelect .kertas{
+    top: 0;
+    left: 74%;
+}
+
+.enemySelect .batu img:hover{
+    border-radius: 20px;
+    border: solid 3px black; 
+}
+
+.enemySelect .gunting img:hover{
+    border-radius: 20px;
+    border: solid 3px black; 
+}
+
+.enemySelect .kertas img:hover{
+    border-radius: 20px;
+    border: solid 3px black; 
+}
+
+.enemySelect img{
+    transition: 0.5s;
+    width: 80px;
+    cursor: pointer;
+}
